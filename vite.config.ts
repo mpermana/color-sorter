@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  server: {
-    allowedHosts: ['ryzen.tenk.co'],
-    port: 5174,
-    open: true
-  },
+  base: './',
   build: {
     target: 'es2020'
+  },
+  server: {
+    allowedHosts: ['ryzen.tenk.co', 'color-sorter'],
+    port: 5174,
+    open: true
   }
 })

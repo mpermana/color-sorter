@@ -15,7 +15,8 @@ const config: Phaser.Types.Core.GameConfig = {
     autoCenter: Phaser.Scale.NO_CENTER
   },
   scene: [GameScene],
-  input: { activePointers: 1 }
+  input: { activePointers: 1 },
+  dom: { createContainer: true },
 }
 
 new Phaser.Game(config)
